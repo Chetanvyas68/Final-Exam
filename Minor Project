@@ -8,7 +8,7 @@ body{
   
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  background-color: tan;
+  background-color: lightgrey;
 
 }
 .menu{
@@ -36,14 +36,14 @@ ul li a{
   color: blue;
 }
 .main{
-  color: blue !important;
+  color: rgb(255, 0, 0) !important;
 }
 .imgslider{
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,7 +113,7 @@ ul li a{
   position: absolute;
   width: 50px;
   line-height: 50px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .set span{
   font-weight: 900;
@@ -134,7 +134,7 @@ button {
   border-radius: 8px;
 }
 .login .or{
-  color: rgba(255, 255, 255, 0.733);
+  color: rgba(0, 0, 0, 0.733);
   margin-top: 9px;
 }
 
@@ -147,10 +147,10 @@ button {
   padding-right: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
-  color: rgba(244, 247, 250, 0.795);
+  color: rgba(0, 0, 0, 0.795);
   border-radius: 5px;
   line-height: 30px;
-  background: rgba(255, 255, 255, 0.164);
+  background: rgba(255, 2, 2, 0.164);
   backdrop-filter: blur(80px);
 }
 
@@ -160,7 +160,7 @@ button {
 
 button:hover,
 .icon-button span:hover{
-  background-color: #babecc8c;
+  background-color: #fa0808d3;
 }
 form .login{
    backdrop-filter: blur(10px);
@@ -169,14 +169,14 @@ form .login{
   text-decoration: none;
 }
 .terms span{
-  color: #ffffff;
+  color: lightseagreen;
 
 }
 .terms a{
-  color: red;
+  color: rgb(253, 5, 5);
 }
 .newa span a{
-  color: rgb(0, 255, 0);
+  color: rgb(154, 13, 219);
 }
 .res p{
 padding: 0px;
@@ -187,7 +187,7 @@ margin-top: 0px;
   display: none;
 }
 .sm-1 ul{
-  background-color: black;
+  background-color: lavender;
 }
 .menu ul li:hover .sm-1{
   display: block;
@@ -216,12 +216,13 @@ margin-top: 0px;
   margin-left: 50px !important;
   margin-top: -12px !important;
   /*padding-left: 50px;*/
-  background-color: black;
+  background-color: lavender;
   
 }
 .sm-1 a:hover{
-  color: rgb(0, 255, 0) !important;
+  color: orange !important;
 }
+
           </style>
 
         </head>
@@ -253,8 +254,14 @@ margin-top: 0px;
                         </div>
                     </li>
 
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="otherpage"></a></li>
+                    <li><a href="C:\Users\Vishvesh Vyas\Desktop\EC_Collaboration_PChang_5385.jpg">Gallery</a></li>      
+                    
+                    <li><a href="#"></a></li>
+                    <li><a href="otherpage"></a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Twitter">About</a></li>
+                    
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -271,7 +278,7 @@ margin-top: 0px;
         <h2>Login From</h2>
         <div class="set">
             <span class="fa fa-user"></span>
-            <input type="text" placeholder="Email Id" required>
+            <input type="text" placeholder="Email Id or Phone Number" required>
         </div>
         <br>
         <div class="set">
@@ -294,7 +301,7 @@ margin-top: 0px;
         <div class="or">Or</div>
         <br>
         <div>
-            <span style="color: aliceblue;">continue with...</span>
+            <span style="color: rgb(139, 131, 5);">continue with...</span>
         </div>
         <div class="icon-button"> 
 
