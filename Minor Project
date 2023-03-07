@@ -187,7 +187,8 @@ margin-top: 0px;
   display: none;
 }
 .sm-1 ul{
-  background-color: lavender;
+  background-color: transparent;
+ 
 }
 .menu ul li:hover .sm-1{
   display: block;
@@ -216,7 +217,7 @@ margin-top: 0px;
   margin-left: 50px !important;
   margin-top: -12px !important;
   /*padding-left: 50px;*/
-  background-color: lavender;
+  background-color: transparent;
   
 }
 .sm-1 a:hover{
@@ -254,12 +255,10 @@ margin-top: 0px;
                         </div>
                     </li>
 
-                    <li><a href="#"></a></li>
-                    <li><a href="otherpage"></a></li>
+                   
                     <li><a href="C:\Users\Vishvesh Vyas\Desktop\EC_Collaboration_PChang_5385.jpg">Gallery</a></li>      
                     
-                    <li><a href="#"></a></li>
-                    <li><a href="otherpage"></a></li>
+
                     <li><a href="https://en.wikipedia.org/wiki/Twitter">About</a></li>
                     
                     <li><a href="#">Contact</a></li>
