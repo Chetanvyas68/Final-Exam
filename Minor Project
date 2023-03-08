@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Twitter</title>
         <style>
 
@@ -33,7 +34,7 @@ ul li a{
   
 }
 .menu a:hover{
-  color: blue;
+  color: rgb(29, 235, 235);
 }
 .main{
   color: rgb(255, 0, 0) !important;
@@ -47,8 +48,8 @@ ul li a{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation: animate 30s ease-in-out infinite ;
-}
+} 
+
 @keyframes animate{
   0%{
       background-image: url('C:\Users\Vishvesh Vyas\Desktop\icons8-twitter-144.png');
@@ -78,7 +79,7 @@ ul li a{
   width: 330px;
   border-radius: 10px;
   padding: 40px;
-  margin: auto;
+  margin left: 40%;
   box-shadow: -3px -3px 9px #fd0404, 3px 3px 7px rgb(235, 7, 7);
   margin-top: -60px;
 }
@@ -86,7 +87,7 @@ ul li a{
   color: rgb(10, 155, 5);
 }
 .or{
-  color: green;
+  color: lightgrey;
 }
 .logo1 img{
   height: 50px;
@@ -176,7 +177,7 @@ form .login{
   color: rgb(253, 5, 5);
 }
 .newa span a{
-  color: rgb(154, 13, 219);
+  color: rgb(119, 160, 177);
 }
 .res p{
 padding: 0px;
@@ -221,9 +222,179 @@ margin-top: 0px;
   
 }
 .sm-1 a:hover{
-  color: orange !important;
+  color: rgb(6, 225, 214) !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 450px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-top: 3 %;
+
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #d90429,
+    #d90429);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #d90429,
+            #d90429);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    color: #d90429;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1rem;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #d90429;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #d90429;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+    color: #d90429;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #d90429;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
           </style>
 
         </head>
@@ -261,46 +432,40 @@ margin-top: 0px;
 
                     <li><a href="https://en.wikipedia.org/wiki/Twitter">About</a></li>
                     
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"></a></li>
+                   <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="logo">
-                <a href="#"><img src="C:\Users\Vishvesh Vyas\Desktop\icons8-twitter-144.png"></a>
+                <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"></a>
             </div>
            
     
-    <form>
-    <div class="login">
-        <div class="logo1">
-            <a href="#"><img src="C:\Users\Vishvesh Vyas\Desktop\icons8-twitter-144.png"></a>
-        </div>
-        <h2>Login From</h2>
-        <div class="set">
-            <span class="fa fa-user"></span>
-            <input type="text" placeholder="Email Id or Phone Number" required>
-        </div>
-        <br>
-        <div class="set">
-            <span class="fa fa-lock"></span>
-            <input type="text" placeholder="Password" required>
-        </div>
-        <br>
-        <div class="terms">
-            <input type="checkbox" required>
-            <span>Agree With <a href="#">terms and conditions</a></span>
-
-        </div>
-        <div>
-            <button>Log in</button>
-        </div>
-        <br>
-        <div class="newa">
+            <div class="box">
+                <div class="form">
+                    <h2>Sign in</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Email or Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Signup</a>
+                    </div>
+                    <input type="submit" value="Login">
+                     <div class="newa">
             <span><a href="#">Create new account</a></span>
         </div>
         <div class="or">Or</div>
         <br>
         <div>
-            <span style="color: rgb(139, 131, 5);">continue with...</span>
+            <span style="color: rgb(116, 159, 177);">Continue With...</span>
         </div>
         <div class="icon-button"> 
 
@@ -309,12 +474,13 @@ margin-top: 0px;
             <a href="#"><span><i class="fa fa-google"></i>  Google</span></a>
         
          </div>
-    </div>
-    </form>
+                </div>
+            </div>
     <br>
+    
     <div class="res">
     <p>Copyright Infringement 2023 by Reference Data. All Rights Reserved.</p>
-        <span>Form is powered by chetan vyas.</span>
+        <span>Form is powered by Chetan Vyas.</span>
     </div>      
 
 </div>
