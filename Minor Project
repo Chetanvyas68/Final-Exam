@@ -79,7 +79,7 @@ ul li a{
   width: 330px;
   border-radius: 10px;
   padding: 40px;
-  margin left: 40%;
+  margin-left: 40%;
   box-shadow: -3px -3px 9px #fd0404, 3px 3px 7px rgb(235, 7, 7);
   margin-top: -60px;
 }
@@ -249,7 +249,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     margin-left: 40%;
-    margin-top: 3 %;
+    margin-top: 3%;
 
 }
 
